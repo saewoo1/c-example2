@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int main()
 {
@@ -7,12 +6,17 @@ int main()
     int i;
 
     scanf("%s", str);
-    i = strlen(str);
+
+    while (str[i])
+    {
+        i++;
+    }
 
     while (i + 1)
     {
         printf("%c", str[i]);
         i--;
     }
+
     return 0;
 }
